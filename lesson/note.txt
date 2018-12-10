@@ -1,0 +1,23 @@
+ps aux |grep 'node' 查看node进程
+kill 端口号 -> 杀死当前进程
+
+前端请求
+1. 固定部分   静态资源  html, css, 图片
+2. 不固定部分 动态资源  用户名不固定
+
+每一张表都要有一个主键
+1. 整数int
+2. 长整数bigint(21)
+3. 浮点数 float
+4. 双精度浮点数 double
+5. 字符串 varchar(16)
+6. 文本 text
+
+数据库引擎
+MYISAM: 读很多，写非常少，写是表级锁
+InnoDb: 读较多, 写也较多，行级锁
+select * from student; 尽量不要用，因为数据库可能会很大
+
+一个DAO文件对应着一个表的操作
+
+拦截器

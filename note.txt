@@ -1,0 +1,6 @@
+1. module.exports 和 exports 的区别
+  module.exports = {}, exports = {}
+  module.exports === exports, 二者指向同一个对象
+  二者指向不同空间的时候, 根据module.exports来决定值
+2. nodejs的模块是运行在一个函数当中的
+  function xyz (exports, require, module, __filename, __dirname) {}
